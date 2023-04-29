@@ -1,6 +1,9 @@
 " taken and edited from https://amix.dk/vim/vimrc.html and
 " https://dougblack.io/words/a-good-vimrc.html
 
+" Published under the GNU Lesser General Public License
+" https://www.gnu.org/licenses/lgpl-3.0.html
+
 " Sets how many lines of history VIM has to remember
 set history=700
 
@@ -55,8 +58,8 @@ set lazyredraw
 set showmatch
 
 " Keep 3 lines below and above the cursor
-" thinking about setting to 9999 to always keep cursor in center screen
-set scrolloff=9999
+" thinking about setting to 999 to always keep cursor in center screen
+set scrolloff=999
 
 " before the first colorscheme command will ensure that the highlight group
 " gets created and is not cleared by future colorscheme commands
