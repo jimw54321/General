@@ -68,9 +68,10 @@ set lazyredraw
 " highlight matching [{()}]
 set showmatch
 
-" Keep 3 lines below and above the cursor
-" thinking about setting to 999 to always keep cursor in center screen
-set scrolloff=999
+" keep 3 lines below and above the cursor
+" set scrolloff=3
+" keep the cursor in the center of the screen
+set scrolloff=99
 
 " before the first colorscheme command will ensure that the highlight group
 " gets created and is not cleared by future colorscheme commands
@@ -80,6 +81,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 " Show tabs that are not at the start of a line
 " Show spaces used for indenting (so you use only tabs for indenting).
 " match ExtraWhitespace /\s\+$\| \+\ze\t\|[^\t]\zs\t\+\|^\t*\zs \+/
+" highlight trailing whitespace
 match ExtraWhitespace /\s\+$/
 
 autocmd InsertLeave * redraw!
