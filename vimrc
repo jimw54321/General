@@ -50,7 +50,7 @@ set statusline=\ CWD:\ %r%{getcwd()}%h\ FILE:\ %f\ LINE:\ %l
 
 " file type specific tab settings.  https://arisweedler.medium.com/tab-settings-in-vim-1ea0863c5990
 autocmd FileType html,css setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
-autocmd FileType c,cpp,h,pl,pm,pod,t,py,md,js setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+autocmd FileType sh,ksh,csh,c,cpp,h,pl,pm,pod,t,py,md,js setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 autocmd FileType txt,mak setlocal tabstop=8 softtabstop=8 shiftwidth=8
 
 " show line numbers
