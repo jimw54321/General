@@ -1,6 +1,6 @@
-" taken and edited from https://amix.dk/vim/vimrc.html and
-" https://dougblack.io/words/a-good-vimrc.html
+" taken and edited from https://amix.dk/vim/vimrc.html and https://dougblack.io/words/a-good-vimrc.html
 
+" Jim Woodworth - jimw54321@gmail.com
 " Published under the GNU Lesser General Public License
 " https://www.gnu.org/licenses/lgpl-3.0.html
 
@@ -26,6 +26,12 @@ set incsearch
 " Enable syntax highlighting
 syntax enable
 
+" In this directory are .vim files for various color schemes.  Choose as you see fit.
+" [jim@localhost colors]$ pwd
+" /usr/share/vim/vim82/colors
+" [jim@localhost colors]$ ls
+" blue.vim      default.vim  desert.vim   evening.vim   koehler.vim  murphy.vim  peachpuff.vim  ron.vim    slate.vim  torte.vim
+" darkblue.vim  delek.vim    elflord.vim  industry.vim  morning.vim  pablo.vim   README.txt     shine.vim  tools      zellner.vim
 colorscheme desert
 set background=dark
 
