@@ -43,10 +43,15 @@ set laststatus=2
 set statusline=\ CWD:\ %r%{getcwd()}%h\ FILE:\ %f\ LINE:\ %l
 
 " number of visual spaces per TAB
-set tabstop=8
+" set tabstop=8
 
 " number of spaces in tab when editing
-set softtabstop=8
+" set softtabstop=8
+
+" file type specific tab settings.  https://arisweedler.medium.com/tab-settings-in-vim-1ea0863c5990
+autocmd FileType html,css setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+autocmd FileType c,cpp,h,pl,pm,pod,t,py,md,js setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+autocmd FileType txt,mak setlocal tabstop=8 softtabstop=8 shiftwidth=8
 
 " show line numbers
 set number
@@ -74,6 +79,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 " Show trailing whitespace and spaces before a tab
 " Show tabs that are not at the start of a line
 " Show spaces used for indenting (so you use only tabs for indenting).
-match ExtraWhitespace /\s\+$\| \+\ze\t\|[^\t]\zs\t\+\|^\t*\zs \+/
+" match ExtraWhitespace /\s\+$\| \+\ze\t\|[^\t]\zs\t\+\|^\t*\zs \+/
+match ExtraWhitespace /\s\+$/
 
 autocmd InsertLeave * redraw!
